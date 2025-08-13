@@ -23,48 +23,74 @@ By the end of this project, you will be able to:
 
 ---
 
-## 🧠 **Types of LLM Models**
+# 🧠 Types of LLM Models
 
-### 1️⃣ **Causal Language Models** (e.g., GPT-2, LLaMA, Mistral, Gemma)  
-- **Core function:** Generate text by predicting the next token.  
-- **Architecture:** Decoder-only.  
-- **Uses:**  
-  - 📝 **Auto-completion:** Continue a given text.  
-  - 🛠 **Instruction-following:** If fine-tuned for instructions, they can respond to tasks or questions.  
-- **Examples:**  
-    - Auto-completion:  
-      ```
-      Prompt: "Once upon a time in Riyadh..."
-      Output: "...there was a young developer who dreamed of building the smartest AI in the region."
-      ```
-    - Instruction:  
-      ```
-      Prompt: "Write a short poem about the desert in Arabic."
-      Output: "في الصحراء حيث الرمال تلمعُ...\nتغني الرياح لحناً يسطعُ"
-      ```
+Not all LLMs work the same way. There are different types, each suited for specific tasks. Sometimes, their capabilities overlap depending on their training.
 
----
+## 1️⃣ Causal Language Models (Next-Word Predictors)
 
-### 2️⃣ **Sequence-to-Sequence Models** (e.g., T5, BART, mBART)  
-- **Core function:** Transform an input sequence into an output sequence.  
-- **Architecture:** Encoder–Decoder.  
-- **Uses:** Translation, summarization, text-to-text transformations.  
-- **Example:**  
-    ```
-    Prompt: "Translate to Arabic: Artificial Intelligence will change the world."
-    Output: "الذكاء الاصطناعي سيغير العالم."
-    ```
+These models predict the next word in a sequence. Given the start of a sentence, they'll continue it. When instruction-tuned, they can follow commands instead of just completing text.
+
+**Examples:** GPT-2, LLaMA, Mistral, Gemma
+
+### 📌 Examples
+
+#### Auto-completion:
+**Prompt:**  
+"Once upon a time in Riyadh..."
+
+**Output:**  
+"...there was a young developer who dreamed of building the smartest AI in the region."
+
+#### Instruction-following:
+**Prompt:**  
+"Write a short poem about the desert."
+
+**Output:**  
+"In the desert where the sands do gleam,  
+The wind sings softly, like a dream."
 
 ---
 
-### 3️⃣ **Masked Language Models** (e.g., BERT, RoBERTa)  
-- **Core function:** Understand and analyze text by predicting masked tokens or classifying text.  
-- **Architecture:** Encoder-only.  
-- **Uses:** Classification, entity extraction, semantic search, sentiment analysis.  
-- **Example:**  
-    ```
-    Text: "Machine learning is [MASK] important in modern technology."
-    Output: "very"
-    ```
+## 2️⃣ Sequence-to-Sequence Models (Text Transformers)
+
+These models convert one text into another, making them ideal for translation, summarization, and text-to-text transformations. They use an Encoder–Decoder architecture.
+
+**Examples:** T5, BART, mBART
+
+### 📌 Example
+
+**Prompt:**  
+"Translate to Arabic: Artificial Intelligence will change the world."
+
+**Output:**  
+"الذكاء الاصطناعي سيغير العالم."
 
 ---
+
+## 3️⃣ Masked Language Models (Fill-in-the-Blank)
+
+These models excel at understanding, classifying, and analyzing text by predicting masked (hidden) words rather than generating long text.
+
+**Examples:** BERT, RoBERTa
+
+### 📌 Example
+
+**Text:**  
+"Machine learning is [MASK] important in modern technology."
+
+**Output:**  
+"very"
+
+## 💡 Learning Advice  
+
+> **Remember**: You don’t need to learn everything at once — take it step by step.  
+> - At first, you might feel lost or even think about giving up.  
+> - But one day, you’ll realize you’ve already gone further than many others.  
+> - Smart learners know they don’t have to master everything right away — they keep moving forward.  
+>  
+> **Yes, you might stop once, twice, or even three times…**  
+> **But failure isn’t in stopping — it’s in never starting again.**  
+>  
+> Keep learning, push yourself out of your comfort zone, and remember:  
+> **After every struggle comes ease.** 🌟  
