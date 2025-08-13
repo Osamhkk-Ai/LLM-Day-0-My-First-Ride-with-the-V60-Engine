@@ -152,3 +152,11 @@ top_p = 0.5
 temperature = 0.9
 top_p = 0.95
 ```
+
+
+---
+
+## 🚀 Final Note
+
+So, what’s stopping you from chatting with ChatGPT right now about the topics we covered above if something isn’t clear?  
+💭 **A learning mindset is a lifestyle — keep asking, keep exploring.**
