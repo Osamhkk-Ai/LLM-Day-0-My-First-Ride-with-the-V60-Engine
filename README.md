@@ -94,3 +94,38 @@ These models excel at understanding, classifying, and analyzing text by predicti
 >  
 > Keep learning, push yourself out of your comfort zone, and remember:  
 > **After every struggle comes ease.** 🌟  
+
+
+■■ Text Generation Settings
+Control how your AI generates text with these key parameters:
+outputs = V60.generate(
+ **inputs,
+ max_new_tokens=100, # Length of output
+ temperature=0.7, # Creativity level
+ top_p=0.9, # Focus vs. diversity
+ do_sample=True # Enable randomness
+)
+■ Parameter Guide
+1. Output Length (max_new_tokens)
+What it does: Sets how many words/characters the AI generates.
+Example:
+• 50 → Brief answer
+• 200 → Detailed explanation
+2. Creativity Control (temperature)
+Value | Effect | Example Output
+0.1 | Very safe, predictable | "The sky is blue."
+0.7 | Balanced (default) | "The sky is a beautiful azure today."
+1.5 | Highly creative | "The sky melts into shades of sapphire and gold at dusk."
+3. Focus vs. Diversity (top_p)
+• Low (0.5): Strict, factual responses → 'Water is H■O.'
+• High (0.95): Expressive, varied answers → 'Water is the essence of life, flowing through rivers and
+dreams alike.'
+4. Randomness Switch (do_sample)
+• True: Uses temperature / top_p for dynamic outputs.
+• False: Always picks the #1 most likely word (rigid).
+■ Quick Tips
+For technical answers:
+temperature=0.3, top_p=0.5
+For creative writing:
+temperature=0.9, top_p=0.95
+■ Try this: Adjust temperature first—it has the biggest impact on creativity.
